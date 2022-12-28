@@ -14,5 +14,5 @@ add_action( 'plugins_loaded', 'pqe_initialize' );
 function pqe_initialize() {
   define( 'PQ_INCLUDE_DIR', plugin_dir_path( __FILE__ ) . 'includes/' );
 
-  include_once( PQ_INCLUDE_DIR . 'pqe_header.php' );
+  include_once( PQ_INCLUDE_DIR . 'pqe_head.php' );
 }
