@@ -1,0 +1,17 @@
+*.min.css
+*.min.js
+
+/*
+!.gitignore
+wp-content/*
+!wp-content/
+
+wp-content/themes/*
+!wp-content/themes/
+!wp-content/themes/pqe-child-theme/
+
+wp-content/plugins/*
+!wp-content/plugins/
+
+!wp-content/plugins/panier-quebecois-entreprise/
+wp-content/plugins/panier-quebecois-entreprise/vendor
