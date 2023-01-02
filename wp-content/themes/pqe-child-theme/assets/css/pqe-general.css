@@ -1,0 +1,48 @@
+/* Testimony image */
+#pq-testimony-img {
+  position: absolute;
+  top: calc(100% - 350px);
+  clip: rect(0px,2000px,350px,0px);
+}
+#pq-testimony-wrapper{
+  overflow-x: clip;
+}
+@media( max-width:1024px ) {
+  #pq-testimony-img {
+      width: 130%;
+      top: calc(100% - 250px);
+      clip: rect(0px,2000px,250px,0px);
+  }
+}
+@media( max-width:767px ) {
+  #pq-testimony-img{
+      width: 500px;
+      right: -100px;
+      top: calc(100% - 200px);
+      clip: rect(0px,calc(500px - 100px),200px,0px);
+  }
+}
+@media( max-width:666px ) {
+  #pq-testimony-img {
+      width: 450px;
+      clip: rect(0px,calc(450px - 100px),200px,0px);
+  }
+}
+@media( max-width:560px ) {
+  #pq-testimony-img {
+      width: 400px;
+      clip: rect(0px,calc(400px - 100px),200px,0px);
+  }
+}
+@media( max-width:450px ) {
+  #pq-testimony-img {
+      top: calc(100% - 200px);
+      clip: rect(0px,calc(400px - 100px),200px,0px);
+  }
+}
+@media( max-width:380px ) {
+  #pq-testimony-img {
+      top: calc(100% - 180px);
+      clip: rect(0px,calc(400px - 100px),180px,0px);
+  }
+}
