@@ -21,9 +21,6 @@
   opacity: 0;
   transition: opacity 1000ms;
 }
-#pqe-image-with-overlay-section .pqe-image-with-overlay-wrapper:hover .elementor-widget-container p {
-  opacity: 1;
-}
 #pqe-image-with-overlay-section .pqe-image-with-overlay::before {
   position: absolute;
   content: '';
@@ -34,8 +31,23 @@
   opacity: 0;
   transition: opacity 1000ms;
 }
-#pqe-image-with-overlay-section .pqe-image-with-overlay-wrapper:hover .pqe-image-with-overlay::before {
-  opacity: 0.4;
+
+@media (pointer: fine) {
+  #pqe-image-with-overlay-section .pqe-image-with-overlay-wrapper:hover .elementor-widget-container p {
+    opacity: 1;
+  }
+  #pqe-image-with-overlay-section .pqe-image-with-overlay-wrapper:hover .pqe-image-with-overlay::before {
+    opacity: 0.4;
+  }
+}
+
+@media (pointer: coarse) {
+  #pqe-image-with-overlay-section .pqe-image-with-overlay.viewportVisible .elementor-widget-container p {
+    opacity: 1;
+  }
+  #pqe-image-with-overlay-section .pqe-image-with-overlay.viewportVisible::before {
+    opacity: 0.4;
+  }
 }
 
 /* Testimony image */
