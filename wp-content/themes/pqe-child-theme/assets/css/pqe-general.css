@@ -1,15 +1,40 @@
 /* Images with overlay */
-.pqe-image-with-overlay {
+#pqe-image-with-overlay-section .pqe-image-with-overlay-wrapper {
   cursor: pointer;
 }
-#pqe-images-with-overlay-wrapper .pqe-image-with-overlay .elementor-widget-wrap > * {
-  opacity: 0;
-  transition: opacity 500ms;
+#pqe-image-with-overlay-section .pqe-image-with-overlay-wrapper .elementor-widget-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-#pqe-images-with-overlay-wrapper .pqe-image-hovered .elementor-widget-wrap > .elementor-element {
+#pqe-image-with-overlay-section .pqe-image-with-overlay {
+  display: flex;
+  min-height: 300px;
+}
+#pqe-image-with-overlay-section .pqe-image-with-overlay .elementor-widget-container {
+  display: flex;
+  align-items: center;
+}
+
+#pqe-image-with-overlay-section .pqe-image-with-overlay .elementor-widget-container p {
+  z-index: 20;
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+#pqe-image-with-overlay-section .pqe-image-with-overlay-wrapper:hover .elementor-widget-container p {
   opacity: 1;
 }
-#pqe-images-with-overlay-wrapper .pqe-image-hovered div.elementor-widget-wrap > .elementor-background-overlay {
+#pqe-image-with-overlay-section .pqe-image-with-overlay::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+#pqe-image-with-overlay-section .pqe-image-with-overlay-wrapper:hover .pqe-image-with-overlay::before {
   opacity: 0.4;
 }
 
